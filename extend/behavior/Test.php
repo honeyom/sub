@@ -12,9 +12,6 @@ use think\facade\Request;
 class Test
 {
 
-//    public function appInit($params){
-//        \think\facade\Log::write('[DEBUG]'.date('Y:m:d H:i:s',time()).'写入了日志::'.Request::controller().'/'.Request::action());
-//    }
     public function start(){
         Log::debug(date('Y:m:d H:i:s',time()).'写入了日志::'.Request::controller().'/'.Request::action());
     }
